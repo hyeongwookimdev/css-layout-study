@@ -1,0 +1,29 @@
+.grid {
+  color: white;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(20px, min-content));
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+}
+/*
+ min-content: 막약 box를 만든다고 하면, content가 작아질 수 있는 만큼 작아지는 것
+ max-content: content가 필요한 만큼 크게 만드는 것
+*/
+.item:nth-child(odd) {
+  background-color: #2ecc71;
+}
+
+.item:nth-child(even) {
+  background-color: #3498db;
+}
+
+/*
+.nav {
+  background-color: #8e44ad;
+}
+
+.footer {
+  background-color: #f39c12;
+}
+*/
